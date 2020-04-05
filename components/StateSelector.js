@@ -33,11 +33,6 @@ export default function StateSelector() {
             border-radius: 0.5rem;
             background: #f2f2f2;
           }
-          ,
-          h3 {
-            display: inline-block;
-            font-style: Helvetica;
-          }
         `}</style>
       </select>
       <StatsByState
