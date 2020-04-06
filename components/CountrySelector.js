@@ -14,6 +14,14 @@ export default function CountrySelector() {
     <div>
       <h3>Currently Showing {selectedCountry}</h3>
       <select
+        style={{
+          fontSize: '1rem',
+          margin: '5px 0 30px 0',
+          height: '2.7rem',
+          padding: '2rem',
+          borderRadius: '0.5rem',
+          backgroundColor: '#f2f2f2',
+        }}
         onChange={e => {
           setSelectedCountry(e.target.value)
         }}
@@ -27,16 +35,6 @@ export default function CountrySelector() {
             {country.name}
           </option>
         ))}
-        <style jsx>{`
-          select {
-            font-size: 1rem;
-            margin: 5px 0 30px 0;
-            height: 2.7rem;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            background: #f2f2f2;
-          }
-        `}</style>
       </select>
       <Stats
         url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}

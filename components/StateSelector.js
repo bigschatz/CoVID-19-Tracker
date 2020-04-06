@@ -18,22 +18,22 @@ export default function StateSelector() {
   return (
     <div>
       <h3>Currently Showing: {selectedState}</h3>
-      <select onChange={e => setSelectedState(e.target.value)}>
+      <select
+        style={{
+          fontSize: '1rem',
+          margin: '5px 0 30px 0',
+          height: '2.7rem',
+          padding: '2rem',
+          borderRadius: '0.5rem',
+          backgroundColor: '#f2f2f2',
+        }}
+        onChange={e => setSelectedState(e.target.value)}
+      >
         {[...uniqueStateNames].map(state => (
           <option selected={selectedState === state} key={state} value={state}>
             {state}
           </option>
         ))}
-        <style jsx>{`
-          select {
-            font-size: 1rem;
-            margin: 5px 0 30px 0;
-            height: 2.7rem;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            background: #f2f2f2;
-          }
-        `}</style>
       </select>
       <StatsByState
         url="https://covid19.mathdro.id/api/countries/USA/confirmed/"
