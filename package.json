@@ -8,7 +8,8 @@
     "start": "next",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d .next",
+    "build": "next build"
   },
   "keywords": [],
   "author": "",
