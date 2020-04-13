@@ -20,10 +20,9 @@ export default function StateSelector() {
       <h3>Currently Showing: {selectedState}</h3>
       <select
         style={{
-          fontSize: '16px',
+          fontSize: '1rem',
           margin: '5px 0 30px 0',
-          height: '40px',
-          padding: '24px',
+          height: '2.5rem',
           borderRadius: '0.5rem',
           backgroundColor: '#f2f2f2',
         }}
