@@ -4,7 +4,7 @@ import useStats from '../utils/useStats'
 
 const StatGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1.5rem;
 `
 const StatBlock = styled.div`

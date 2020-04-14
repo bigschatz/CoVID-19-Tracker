@@ -24,6 +24,7 @@ export default function StateSelector() {
           margin: '5px 0 30px 0',
           height: '2.5rem',
           borderRadius: '0.5rem',
+          outline: '0',
           backgroundColor: '#f2f2f2',
         }}
         onChange={e => setSelectedState(e.target.value)}
